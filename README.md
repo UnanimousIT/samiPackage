@@ -1,6 +1,18 @@
 # JavaScript Functions Documentation
 This repository contains a collection of JavaScript functions designed to perform various tasks within web applications.
 
+## How to Add
+1. First Add Jquery CDN from [Jsdelivr](https://www.jsdelivr.com/package/npm/jquery) or [cdnjs](https://cdnjs.com/libraries/jquery).
+2. Copy This URL
+```javascript
+https://cdn.jsdelivr.net/gh/UnanimousIT/samiPackage/dist/js/samipack.min.js
+```
+or
+
+```apacheconf
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/UnanimousIT/samiPackage/dist/js/samipack.min.js"></script>
+```
+
 ## Functions List
 ### 1. **cus_toast_auto(options)**
 #### **Description :** Automatically displays a customizable toast notification.
