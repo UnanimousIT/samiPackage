@@ -267,6 +267,7 @@
             valuesId: {},
             ReturnFromApi:'',
             imagePrev: false,
+            cloudImagePrev: false,
             dbImgColName:''
         }, options);
         let id = $(this).val();
@@ -280,6 +281,12 @@
                     $('.prev_image_view').html("");
                     $('.prev_image_view').append('\
                         <img src="/uploads/banner/'+ response[settings.ReturnFromApi][settings.dbImgColName] +'" alt="" class="prev_banner_image w-100">\
+                    ');
+                }
+                if(settings.cloudImagePrev == true){
+                    $('.prev_image_view').html("");
+                    $('.prev_image_view').append('\
+                        <img src="'+ response[settings.ReturnFromApi][settings.dbImgColName] +'" alt="" class="prev_banner_image w-100">\
                     ');
                 }
                 for (let key in settings.valuesId) {
@@ -299,7 +306,6 @@
             listName: null,
         }, options);
         let url = $(this).attr('action');
-        console.log(url,formData);
         $.ajax({
             url: url,
             type: 'POST',
