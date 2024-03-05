@@ -284,7 +284,6 @@
                     ');
                 }
                 if(settings.cloudImagePrev == true){
-                    console.log('cloud');
                     $('.prev_image_view').html("");
                     $('.prev_image_view').append('\
                         <img src="'+ response[settings.ReturnFromApi][settings.dbImgColName] +'" alt="" class="prev_banner_image w-100">\
