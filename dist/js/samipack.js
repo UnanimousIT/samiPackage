@@ -277,7 +277,6 @@
             type: "GET",
             url: url,
             success: function (response) {
-                console.log(settings.imagePrev,settings.cloudImagePrev);
                 if(settings.imagePrev == true){
                     $('.prev_image_view').html("");
                     $('.prev_image_view').append('\
